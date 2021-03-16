@@ -39,6 +39,9 @@
 		B3B380A224733E92008411DE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B3809624733E92008411DE /* BackgroundView.swift */; };
 		B3B380A324733E92008411DE /* ConnectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B3809724733E92008411DE /* ConnectButtonView.swift */; };
 		B3B380A424733E92008411DE /* DescriptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B3809824733E92008411DE /* DescriptionTextView.swift */; };
+		C88762212600AB7100F0E83B /* RecentsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88762202600AB7100F0E83B /* RecentsResult.swift */; };
+		C88762242600AB8C00F0E83B /* RecentsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88762232600AB8C00F0E83B /* RecentsResponse.swift */; };
+		C88762282600AC2100F0E83B /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88762272600AC2100F0E83B /* Tracks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,10 +136,10 @@
 		B34D5C162481A02B00960EF7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B37C1B0324761F26004B21EE /* EasifyDefines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasifyDefines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37F81AB247340AC005D66C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B384ADCC24733AD200D9514A /* Easify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B384ADCC24733AD200D9514A /* RecentsPlaylist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecentsPlaylist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B384ADD824733AD300D9514A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B384ADDB24733AD300D9514A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B384ADE224733AD300D9514A /* EasifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B384ADE224733AD300D9514A /* RecentsPlaylistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecentsPlaylistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B384ADE624733AD300D9514A /* EasifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasifyTests.swift; sourceTree = "<group>"; };
 		B384ADE824733AD300D9514A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3B3808824733E92008411DE /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -152,6 +155,9 @@
 		B3D4D7C82476DEA100A7D906 /* EasifyUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyUI.xcodeproj; path = ../Modules/UIModules/EasifyUI/EasifyUI.xcodeproj; sourceTree = "<group>"; };
 		B3D4D7D12476DEA100A7D906 /* EasifyDefines.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyDefines.xcodeproj; path = ../Modules/CoreModules/EasifyDefines/EasifyDefines.xcodeproj; sourceTree = "<group>"; };
 		B3D4D8522476EE6600A7D906 /* SpotifyLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SpotifyLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88762202600AB7100F0E83B /* RecentsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsResult.swift; sourceTree = "<group>"; };
+		C88762232600AB8C00F0E83B /* RecentsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsResponse.swift; sourceTree = "<group>"; };
+		C88762272600AC2100F0E83B /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,8 +268,8 @@
 		B384ADCD24733AD200D9514A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B384ADCC24733AD200D9514A /* Easify.app */,
-				B384ADE224733AD300D9514A /* EasifyTests.xctest */,
+				B384ADCC24733AD200D9514A /* RecentsPlaylist.app */,
+				B384ADE224733AD300D9514A /* RecentsPlaylistTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -320,6 +326,7 @@
 		B3B3808924733E92008411DE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C88762192600AB4F00F0E83B /* Codables */,
 				B3B3808C24733E92008411DE /* ContainerView.swift */,
 			);
 			path = Common;
@@ -413,12 +420,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C88762192600AB4F00F0E83B /* Codables */ = {
+			isa = PBXGroup;
+			children = (
+				C88762202600AB7100F0E83B /* RecentsResult.swift */,
+				C88762232600AB8C00F0E83B /* RecentsResponse.swift */,
+				C88762272600AC2100F0E83B /* Tracks.swift */,
+			);
+			path = Codables;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B384ADCB24733AD200D9514A /* Easify */ = {
+		B384ADCB24733AD200D9514A /* RecentsPlaylist */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B384ADEB24733AD300D9514A /* Build configuration list for PBXNativeTarget "Easify" */;
+			buildConfigurationList = B384ADEB24733AD300D9514A /* Build configuration list for PBXNativeTarget "RecentsPlaylist" */;
 			buildPhases = (
 				B384ADC824733AD200D9514A /* Sources */,
 				B384ADC924733AD200D9514A /* Frameworks */,
@@ -431,14 +448,14 @@
 			);
 			dependencies = (
 			);
-			name = Easify;
+			name = RecentsPlaylist;
 			productName = Easify;
-			productReference = B384ADCC24733AD200D9514A /* Easify.app */;
+			productReference = B384ADCC24733AD200D9514A /* RecentsPlaylist.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B384ADE124733AD300D9514A /* EasifyTests */ = {
+		B384ADE124733AD300D9514A /* RecentsPlaylistTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B384ADEE24733AD300D9514A /* Build configuration list for PBXNativeTarget "EasifyTests" */;
+			buildConfigurationList = B384ADEE24733AD300D9514A /* Build configuration list for PBXNativeTarget "RecentsPlaylistTests" */;
 			buildPhases = (
 				B384ADDE24733AD300D9514A /* Sources */,
 				B384ADDF24733AD300D9514A /* Frameworks */,
@@ -451,9 +468,9 @@
 			dependencies = (
 				B384ADE424733AD300D9514A /* PBXTargetDependency */,
 			);
-			name = EasifyTests;
+			name = RecentsPlaylistTests;
 			productName = EasifyTests;
-			productReference = B384ADE224733AD300D9514A /* EasifyTests.xctest */;
+			productReference = B384ADE224733AD300D9514A /* RecentsPlaylistTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -463,8 +480,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = "Muhammed Said Özcan";
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "Logarithmic Science";
 				TargetAttributes = {
 					B384ADCB24733AD200D9514A = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -475,7 +492,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B384ADC724733AD200D9514A /* Build configuration list for PBXProject "Easify" */;
+			buildConfigurationList = B384ADC724733AD200D9514A /* Build configuration list for PBXProject "RecentsPlaylist" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -506,8 +523,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				B384ADCB24733AD200D9514A /* Easify */,
-				B384ADE124733AD300D9514A /* EasifyTests */,
+				B384ADCB24733AD200D9514A /* RecentsPlaylist */,
+				B384ADE124733AD300D9514A /* RecentsPlaylistTests */,
 			);
 		};
 /* End PBXProject section */
@@ -666,7 +683,9 @@
 				B30FDEFD2484884A00994A01 /* RecentlyPlayedViewModel.swift in Sources */,
 				B3B3809D24733E92008411DE /* LoginViewModel.swift in Sources */,
 				B30FDF0124848C4800994A01 /* RecentlyPlayedRowViewModel.swift in Sources */,
+				C88762282600AC2100F0E83B /* Tracks.swift in Sources */,
 				B3B380A324733E92008411DE /* ConnectButtonView.swift in Sources */,
+				C88762242600AB8C00F0E83B /* RecentsResponse.swift in Sources */,
 				B34D5C172481A02B00960EF7 /* SettingsView.swift in Sources */,
 				B34D5C0F24819FE200960EF7 /* RecentlyPlayedView.swift in Sources */,
 				B30FDEDB2483289400994A01 /* RecentlyPlayedTabBarItem.swift in Sources */,
@@ -675,6 +694,7 @@
 				B3B3809F24733E92008411DE /* AppNameView.swift in Sources */,
 				B3B380A024733E92008411DE /* ButtonWithLinkView.swift in Sources */,
 				B32EFFC024760C44009F6FCC /* SpotifyLoginViewController.swift in Sources */,
+				C88762212600AB7100F0E83B /* RecentsResult.swift in Sources */,
 				B3B3809C24733E92008411DE /* ContainerView.swift in Sources */,
 				B30FDEE42483293200994A01 /* SettingsTabBarItem.swift in Sources */,
 			);
@@ -693,7 +713,7 @@
 /* Begin PBXTargetDependency section */
 		B384ADE424733AD300D9514A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B384ADCB24733AD200D9514A /* Easify */;
+			target = B384ADCB24733AD200D9514A /* RecentsPlaylist */;
 			targetProxy = B384ADE324733AD300D9514A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -744,6 +764,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -804,6 +825,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -839,14 +861,15 @@
 				CODE_SIGN_ENTITLEMENTS = Easify/Easify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Easify/Preview Content\"";
-				DEVELOPMENT_TEAM = Z2EVZ5Y6JY;
+				DEVELOPMENT_TEAM = M3C9S5BRDD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Easify/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.Easify;
+				PRODUCT_BUNDLE_IDENTIFIER = "science.logarithmic.recentsplaylist-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -860,14 +883,15 @@
 				CODE_SIGN_ENTITLEMENTS = Easify/Easify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Easify/Preview Content\"";
-				DEVELOPMENT_TEAM = Z2EVZ5Y6JY;
+				DEVELOPMENT_TEAM = M3C9S5BRDD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Easify/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.Easify;
+				PRODUCT_BUNDLE_IDENTIFIER = "science.logarithmic.recentsplaylist-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -892,7 +916,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Easify.app/Easify";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecentsPlaylist.app/RecentsPlaylist";
 			};
 			name = Debug;
 		};
@@ -914,14 +938,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Easify.app/Easify";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecentsPlaylist.app/RecentsPlaylist";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B384ADC724733AD200D9514A /* Build configuration list for PBXProject "Easify" */ = {
+		B384ADC724733AD200D9514A /* Build configuration list for PBXProject "RecentsPlaylist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B384ADE924733AD300D9514A /* Debug */,
@@ -930,7 +954,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B384ADEB24733AD300D9514A /* Build configuration list for PBXNativeTarget "Easify" */ = {
+		B384ADEB24733AD300D9514A /* Build configuration list for PBXNativeTarget "RecentsPlaylist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B384ADEC24733AD300D9514A /* Debug */,
@@ -939,7 +963,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B384ADEE24733AD300D9514A /* Build configuration list for PBXNativeTarget "EasifyTests" */ = {
+		B384ADEE24733AD300D9514A /* Build configuration list for PBXNativeTarget "RecentsPlaylistTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B384ADEF24733AD300D9514A /* Debug */,

@@ -11,7 +11,7 @@
       location = "container:"
       name = "Application">
       <FileRef
-         location = "group:Application/Easify.xcodeproj">
+         location = "group:/Users/jasjeev/Documents/RecentsPlaylist-iOS/Application/RecentsPlaylist.xcodeproj">
       </FileRef>
    </Group>
    <Group

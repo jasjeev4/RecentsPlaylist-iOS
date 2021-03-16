@@ -23,7 +23,7 @@
 			<string>nl.saidozcan.Easify</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>easify-app</string>
+				<string>recentsplaylist-ios</string>
 			</array>
 		</dict>
 	</array>

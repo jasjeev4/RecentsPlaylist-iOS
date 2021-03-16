@@ -7,23 +7,23 @@
 //
 
 import SwiftUI
+import EasifyCore
 import EasifyUI
 
 // MARK: HomeView
 /// `HomeView` shows a list of tab items with its contents.
-struct HomeView {
-    // MARK: - Properties
-    private let contents: [EasifyUITabBarItem] = [
-        RecentlyPlayedTabBarItem(),
-        SettingsTabBarItem()
-    ]
-}
-
-// MARK: - HomeView: View
-extension HomeView: View {
+struct HomeView: View {
+    @EnvironmentObject var spotifyService: SpotifyService
+    @ObservedObject var model = RecentsModel()
+    
     var body: some View {
-        EasifyUITabBar(items: contents, selectedIndex: 0)
-    }
+        Text("loggedin")
+}
+    
+//    private let contents: [EasifyUITabBarItem] = [
+//        RecentlyPlayedTabBarItem(),
+//        SettingsTabBarItem()
+//    ]
 }
 
 #if DEBUG

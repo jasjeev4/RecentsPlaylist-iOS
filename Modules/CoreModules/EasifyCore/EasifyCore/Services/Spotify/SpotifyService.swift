@@ -46,13 +46,20 @@ public class SpotifyService: ObservableObject {
     // MARK: - Properties
     /// The scopes which are requested upon login to Spotify API. They are as follows:
     public static let loginScopes: [Scope] = [
-        .userReadTop,
-        .playlistModifyPublic,
+        .userReadPrivate,
+        .appRemoteControl,
+        .userReadEmail,
         .playlistReadPrivate,
+        .playlistModifyPrivate,
+        .playlistModifyPublic,
+        .playlistModifyPrivate,
+        .userLibraryRead,
+        .userLibraryModify,
+        .userReadTop,
+        .userReadRecentlyPlayed,
+        .userReadCurrentlyPlaying,
+        .userModifyPlaybackState,
         .playlistReadCollaborative,
-        .userFollowRead,
-        .userFollowModify,
-        .userReadRecentlyPlayed
     ]
     private static let accessTokenKey = "nl.saidozcan.SpotifyService.accessTokenKey"
     private let clientID: String
@@ -101,6 +108,17 @@ public class SpotifyService: ObservableObject {
         SpotifyLogin.shared.getAccessToken { [weak self] (accessToken, error) in
             self?.executePostLoginOperations(token: accessToken, error: error)
             completion?(accessToken, error)
+        }
+    }
+    
+    public func getAccessToken(completion: ((String?, Error?) -> Void)? = nil){
+        SpotifyLogin.shared.getAccessToken {(accessToken, error) in
+            if error == nil {
+                completion?(accessToken, nil)
+            }
+            else {
+                completion?(nil, error)
+            }
         }
     }
 

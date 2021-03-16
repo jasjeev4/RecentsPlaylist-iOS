@@ -1,8 +1,8 @@
-# Easify-iOS
+# RecentsPlaylist-iOS
 
-[![Github Actions Status](https://github.com/s/Easify-iOS/workflows/CI/badge.svg)](https://github.com/s/Easify-iOS/actions)
+Recents Playlist is an Android app that creates a playlist of recently added tracks for any Spotify user. It takes advantage of latest frameworks such as Combine and SwiftUI.
 
-Easify-iOS is an iOS application to discover new songs based on your preferences. Mainly, it uses modularization to have the project scalable for future developments and it takes advantage of latest frameworks such as Combine and SwiftUI.
+This app is derived from a fork of [Easify-iOS](https://github.com/s/Easify-iOS).
 
 It uses a copy of [SpotifyLogin SDK](https://github.com/spotify/SpotifyLogin) to handle the login process with Spotify. 
 
@@ -17,24 +17,4 @@ Then you can register an application on [Spotify Developer Portal](https://devel
 <string>YOUR_CLIENT_SECRET</string>
 <key>redirect_url</key>
 <string>YOUR_REDIRECT_URL</string>
-```
-
-Easify Application's dependency graph:
-```
-Easify 									       
-  |_____EasifyCore
-  |       |______EasifyDefines
-  |       |______EasifyNetwork
-  |       |         |______Alamofire
-  |       |
-  |       |______EasifySpotifyDataModels
-  |       |         |______EasifyDefines
-  |       |         |______EasifyNetwork
-  |       |                   |______Alamofire
-  |       |______SpotifyLogin
-  |
-  |
-  |_____EasifyDefines
-  |_____EasifyUI
-  |_____SpotifyLogin
 ```

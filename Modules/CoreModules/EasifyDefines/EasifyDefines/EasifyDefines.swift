@@ -19,10 +19,10 @@ public struct EasifyDefines {
 
     /// `EasifyDefines.Copies` provides various strings to be shown in the user interface to the user. This must be localized but for demo purposes they are hardcoded for the time being.
     public struct Copies {
-        public static let connectToSpotifyAccount: String = "Connect to your Spotify account"
+        public static let connectToSpotifyAccount: String = "Connect with your Spotify account"
         public static let connectCTA: String = "Connect"
-        public static let easify: String = "Easify"
-        public static let backgroundImageReference: String = "Image: Ron Smith on Unsplash"
+        public static let appName: String = "Recents Playlist"
+        public static let backgroundImageReference: String = ""
         public static let recentlyPlayed = "History"
         public static let loading = "Loading..."
         public static let settings = "Settings"

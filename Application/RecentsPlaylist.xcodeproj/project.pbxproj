@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,9 +39,7 @@
 		B3B380A224733E92008411DE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B3809624733E92008411DE /* BackgroundView.swift */; };
 		B3B380A324733E92008411DE /* ConnectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B3809724733E92008411DE /* ConnectButtonView.swift */; };
 		B3B380A424733E92008411DE /* DescriptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B3809824733E92008411DE /* DescriptionTextView.swift */; };
-		C88762212600AB7100F0E83B /* RecentsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88762202600AB7100F0E83B /* RecentsResult.swift */; };
-		C88762242600AB8C00F0E83B /* RecentsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88762232600AB8C00F0E83B /* RecentsResponse.swift */; };
-		C88762282600AC2100F0E83B /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88762272600AC2100F0E83B /* Tracks.swift */; };
+		C89AE50C2637B434002FFB98 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C89AE50B2637B434002FFB98 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,9 +153,6 @@
 		B3D4D7C82476DEA100A7D906 /* EasifyUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyUI.xcodeproj; path = ../Modules/UIModules/EasifyUI/EasifyUI.xcodeproj; sourceTree = "<group>"; };
 		B3D4D7D12476DEA100A7D906 /* EasifyDefines.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyDefines.xcodeproj; path = ../Modules/CoreModules/EasifyDefines/EasifyDefines.xcodeproj; sourceTree = "<group>"; };
 		B3D4D8522476EE6600A7D906 /* SpotifyLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SpotifyLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C88762202600AB7100F0E83B /* RecentsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsResult.swift; sourceTree = "<group>"; };
-		C88762232600AB8C00F0E83B /* RecentsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsResponse.swift; sourceTree = "<group>"; };
-		C88762272600AC2100F0E83B /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C89AE50C2637B434002FFB98 /* SwiftyJSON in Frameworks */,
 				B3420BC8247B254B00D57FEF /* EasifySpotifyDataModels.framework in Frameworks */,
 				B3420BC6247B254B00D57FEF /* EasifyNetwork.framework in Frameworks */,
 			);
@@ -326,7 +322,6 @@
 		B3B3808924733E92008411DE /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				C88762192600AB4F00F0E83B /* Codables */,
 				B3B3808C24733E92008411DE /* ContainerView.swift */,
 			);
 			path = Common;
@@ -420,16 +415,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C88762192600AB4F00F0E83B /* Codables */ = {
-			isa = PBXGroup;
-			children = (
-				C88762202600AB7100F0E83B /* RecentsResult.swift */,
-				C88762232600AB8C00F0E83B /* RecentsResponse.swift */,
-				C88762272600AC2100F0E83B /* Tracks.swift */,
-			);
-			path = Codables;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -449,6 +434,9 @@
 			dependencies = (
 			);
 			name = RecentsPlaylist;
+			packageProductDependencies = (
+				C89AE50B2637B434002FFB98 /* SwiftyJSON */,
+			);
 			productName = Easify;
 			productReference = B384ADCC24733AD200D9514A /* RecentsPlaylist.app */;
 			productType = "com.apple.product-type.application";
@@ -480,7 +468,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Logarithmic Science";
 				TargetAttributes = {
 					B384ADCB24733AD200D9514A = {
@@ -501,6 +489,9 @@
 				Base,
 			);
 			mainGroup = B384ADC324733AD200D9514A;
+			packageReferences = (
+				C89AE50A2637B433002FFB98 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = B384ADCD24733AD200D9514A /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -683,9 +674,7 @@
 				B30FDEFD2484884A00994A01 /* RecentlyPlayedViewModel.swift in Sources */,
 				B3B3809D24733E92008411DE /* LoginViewModel.swift in Sources */,
 				B30FDF0124848C4800994A01 /* RecentlyPlayedRowViewModel.swift in Sources */,
-				C88762282600AC2100F0E83B /* Tracks.swift in Sources */,
 				B3B380A324733E92008411DE /* ConnectButtonView.swift in Sources */,
-				C88762242600AB8C00F0E83B /* RecentsResponse.swift in Sources */,
 				B34D5C172481A02B00960EF7 /* SettingsView.swift in Sources */,
 				B34D5C0F24819FE200960EF7 /* RecentlyPlayedView.swift in Sources */,
 				B30FDEDB2483289400994A01 /* RecentlyPlayedTabBarItem.swift in Sources */,
@@ -694,7 +683,6 @@
 				B3B3809F24733E92008411DE /* AppNameView.swift in Sources */,
 				B3B380A024733E92008411DE /* ButtonWithLinkView.swift in Sources */,
 				B32EFFC024760C44009F6FCC /* SpotifyLoginViewController.swift in Sources */,
-				C88762212600AB7100F0E83B /* RecentsResult.swift in Sources */,
 				B3B3809C24733E92008411DE /* ContainerView.swift in Sources */,
 				B30FDEE42483293200994A01 /* SettingsTabBarItem.swift in Sources */,
 			);
@@ -764,7 +752,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -825,7 +812,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -869,7 +855,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "science.logarithmic.recentsplaylist-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = science.logarithmic.RecentsiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -891,7 +877,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "science.logarithmic.recentsplaylist-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = science.logarithmic.RecentsiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -904,7 +890,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z2EVZ5Y6JY;
+				DEVELOPMENT_TEAM = M3C9S5BRDD;
 				INFOPLIST_FILE = "EasifyTests/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -926,7 +912,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z2EVZ5Y6JY;
+				DEVELOPMENT_TEAM = M3C9S5BRDD;
 				INFOPLIST_FILE = "EasifyTests/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -973,6 +959,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C89AE50A2637B433002FFB98 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C89AE50B2637B434002FFB98 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C89AE50A2637B433002FFB98 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B384ADC424733AD200D9514A /* Project object */;
 }

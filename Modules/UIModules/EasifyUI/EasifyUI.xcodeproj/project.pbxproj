@@ -619,7 +619,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z2EVZ5Y6JY;
+				DEVELOPMENT_TEAM = M3C9S5BRDD;
 				INFOPLIST_FILE = "EasifyUITests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -638,7 +638,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z2EVZ5Y6JY;
+				DEVELOPMENT_TEAM = M3C9S5BRDD;
 				INFOPLIST_FILE = "EasifyUITests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -17,7 +17,7 @@ struct AppNameView {}
 // MARK: - AppNameView: View
 extension AppNameView: View {
     var body: some View {
-        Text(EasifyDefines.Copies.easify.uppercased())
+        Text(EasifyDefines.Copies.appName.uppercased())
             .kerning(1.0)
             .fontWeight(.heavy)
             .font(.title)

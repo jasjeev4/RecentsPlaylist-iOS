@@ -21,7 +21,6 @@ extension AppNameView: View {
             .kerning(1.0)
             .fontWeight(.heavy)
             .font(.title)
-            .foregroundColor(.white)
             .padding()
     }
 }

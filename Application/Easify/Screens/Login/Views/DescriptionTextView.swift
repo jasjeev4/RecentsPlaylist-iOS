@@ -17,7 +17,6 @@ struct DescriptionTextView: View {
             .kerning(1.0)
             .fontWeight(.bold)
             .font(.callout)
-            .foregroundColor(.white)
             .padding()
     }
 }

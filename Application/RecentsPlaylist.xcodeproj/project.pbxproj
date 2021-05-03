@@ -17,8 +17,6 @@
 		B32CEB2824733DEA00769C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CEB2624733DEA00769C44 /* SceneDelegate.swift */; };
 		B32CEB3024733E2400769C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32CEB2C24733E2400769C44 /* Assets.xcassets */; };
 		B32EFFC024760C44009F6FCC /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32EFFBF24760C44009F6FCC /* SpotifyLoginViewController.swift */; };
-		B3420BC6247B254B00D57FEF /* EasifyNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3420BC4247B254B00D57FEF /* EasifyNetwork.framework */; };
-		B3420BC7247B254B00D57FEF /* EasifyNetwork.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B3420BC4247B254B00D57FEF /* EasifyNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3420BC8247B254B00D57FEF /* EasifySpotifyDataModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3420BC5247B254B00D57FEF /* EasifySpotifyDataModels.framework */; };
 		B3420BC9247B254B00D57FEF /* EasifySpotifyDataModels.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B3420BC5247B254B00D57FEF /* EasifySpotifyDataModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B34D5C0F24819FE200960EF7 /* RecentlyPlayedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34D5C0E24819FE200960EF7 /* RecentlyPlayedView.swift */; };
@@ -103,7 +101,6 @@
 			files = (
 				B3420BC9247B254B00D57FEF /* EasifySpotifyDataModels.framework in Copy Frameworks */,
 				B393A0192476F21800CDCA21 /* EasifyUI.framework in Copy Frameworks */,
-				B3420BC7247B254B00D57FEF /* EasifyNetwork.framework in Copy Frameworks */,
 				B393A0182476F21200CDCA21 /* EasifyCore.framework in Copy Frameworks */,
 				B393A0172476F20C00CDCA21 /* SpotifyLogin.framework in Copy Frameworks */,
 				B393A0162476F20400CDCA21 /* EasifyDefines.framework in Copy Frameworks */,
@@ -162,7 +159,6 @@
 			files = (
 				C89AE50C2637B434002FFB98 /* SwiftyJSON in Frameworks */,
 				B3420BC8247B254B00D57FEF /* EasifySpotifyDataModels.framework in Frameworks */,
-				B3420BC6247B254B00D57FEF /* EasifyNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,7 +851,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = science.logarithmic.RecentsiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsanand.RecentsiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -877,7 +873,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = science.logarithmic.RecentsiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsanand.RecentsiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
